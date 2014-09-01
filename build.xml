@@ -27,30 +27,26 @@
     <target name="clean">
         <echo message="deleting existing build directory"/>
         <delete dir="${build.dir}"/>
+		<echo message="deleting existing sample app jar"/>
+		<delete file="${lib.dir}/jenkinssample.jar"/>
 		<echo message="deleting existing test report directory"/>
 		<delete dir="${testoutput.dir}"/>
     </target>
-    <target name="compile" depends="clean,init,setClassPath,loadTestNG">
+    <target name="compile" depends="clean,init,setClassPath,loadTestNG" >
         <echo message="classpath:${test.classpath}"/>
         <echo message="compiling.........."/>
-        <javac destdir="${build.dir}" srcdir="${src.dir}" classpath="${test.classpath}"/>
+        <javac destdir="${build.dir}" srcdir="${src.dir}" classpath="${test.classpath}" includeantruntime="false"/>
     </target>
-    <target name="runTests" depends="compile">
+	
+	<target name="build-jar" depends="compile">
+	<jar destfile="${lib.dir}/jenkinssample.jar"
+		 basedir="${build.dir}/"
+		 includes="com/psl/sample/**">
+	</jar>
+	</target>
+    <target name="runTests" depends="build-jar">
         <testng classpath="${test.classpath}:${build.dir}">
-        	<xmlfileset dir="${basedir}" includes="testFiles.xml"/>
-            <xmlfileset dir="${basedir}" includes="Debug.xml"/>
+        	<xmlfileset dir="${basedir}" includes="testng.xml"/>
         </testng>
-    </target>
-    <target name="report" depends="runTests">
-        <delete dir="${basedir}/testng-xslt"/>
-        <mkdir dir="${basedir}/testng-xslt"/>
-        <xslt in="${basedir}/test-output/testng-results.xml"
-        style="${basedir}/src/xslt/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
-            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir"/>
-            <param expression="true" name="testNGXslt.sortTestCaseLinks"/>
-            <param expression="FAIL,SKIP,PASS,BY_CLASS" name="testNgXslt.testDetailsFilter"/>
-            <param expression="true" name="testNgXslt.showRuntimeTotals"/>
-            <classpath refid="classpath_jars"/>
-        </xslt>
     </target>
 </project>

@@ -1,0 +1,45 @@
+     [echo] build logged to build_01-09-2014_(14-30-47).log
+init:  duration 0 seconds
+
+setClassPath:
+[pathconvert] Set property test.classpath = E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+setClassPath:  duration 0 seconds
+
+loadTestNG:
+loadTestNG:  duration 0 seconds
+
+compile:
+     [echo] classpath:E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+     [echo] compiling..........
+    [javac] com\psl\sample\MyFirstSample.java added as com\psl\sample\MyFirstSample.class doesn't exist.
+    [javac] Compiling 1 source file to E:\JenkinsAssignment\JenkinsSampleProject\build
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+'-d'
+'E:\JenkinsAssignment\JenkinsSampleProject\build'
+'-classpath'
+'E:\JenkinsAssignment\JenkinsSampleProject\build;E:\JenkinsAssignment\JenkinsSampleProject;E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar'
+'-sourcepath'
+'E:\JenkinsAssignment\JenkinsSampleProject\src'
+'-g:none'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [javac] File to be compiled:
+    E:\JenkinsAssignment\JenkinsSampleProject\src\com\psl\sample\MyFirstSample.java
+compile:  duration 0 seconds
+
+build-jar:
+      [jar] Building jar: E:\JenkinsAssignment\JenkinsSampleProject\lib\jenkinssample.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory com/
+      [jar] adding directory com/psl/
+      [jar] adding directory com/psl/sample/
+      [jar] adding entry com/psl/sample/MyFirstSample.class
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\JenkinsAssignment\JenkinsSampleProject\build.xml:44: 
+build-jar:  duration 0 seconds
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL

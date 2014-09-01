@@ -1,0 +1,34 @@
+     [echo] build logged to build_01-09-2014_(13-48-59).log
+init:  duration 0 seconds
+
+setClassPath:
+[pathconvert] Set property test.classpath = E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+setClassPath:  duration 0 seconds
+
+loadTestNG:
+loadTestNG:  duration 0 seconds
+
+compile:
+     [echo] classpath:E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+     [echo] compiling..........
+    [javac] E:\JenkinsAssignment\JenkinsSampleProject\build.xml:36: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] com\psl\sample\MyFirstSample.java added as com\psl\sample\MyFirstSample.class doesn't exist.
+    [javac] Compiling 1 source file to E:\JenkinsAssignment\JenkinsSampleProject\build
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+'-d'
+'E:\JenkinsAssignment\JenkinsSampleProject\build'
+'-classpath'
+'E:\JenkinsAssignment\JenkinsSampleProject\build;E:\JenkinsAssignment\JenkinsSampleProject;E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-antlr.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-bcel.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-bsf.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-log4j.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-oro.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-regexp.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-resolver.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-apache-xalan2.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-commons-logging.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-commons-net.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-jai.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-javamail.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-jdepend.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-jmf.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-jsch.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-netrexx.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-swing.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-testutil.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;D:\Softwares\Eclipse 4.3.1\configuration\org.eclipse.osgi\bundles\63\1\.cp\lib\antdebug.jar;D:\Softwares\Eclipse 4.3.1\configuration\org.eclipse.osgi\bundles\63\1\.cp\lib\remote.jar;D:\Softwares\Eclipse 4.3.1\configuration\org.eclipse.osgi\bundles\64\1\.cp\lib\remoteAnt.jar;C:\Program Files\Java\jdk1.6.0_21\lib\tools.jar;D:\Softwares\Eclipse 4.3.1\plugins\org.eclipse.swt.win32.win32.x86_3.102.1.v20130827-2048.jar'
+'-sourcepath'
+'E:\JenkinsAssignment\JenkinsSampleProject\src'
+'-g:none'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [javac] File to be compiled:
+    E:\JenkinsAssignment\JenkinsSampleProject\src\com\psl\sample\MyFirstSample.java
+compile:  duration 1 second
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL

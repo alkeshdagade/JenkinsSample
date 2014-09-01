@@ -1,0 +1,61 @@
+     [echo] build logged to build_01-09-2014_(14-13-28).log
+init:  duration 0 seconds
+
+setClassPath:
+[pathconvert] Set property test.classpath = E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+setClassPath:  duration 0 seconds
+
+loadTestNG:
+loadTestNG:  duration 0 seconds
+
+compile:
+     [echo] classpath:E:\JenkinsAssignment\JenkinsSampleProject:E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar:E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar
+     [echo] compiling..........
+    [javac] com\psl\sample\MyFirstSample.java added as com\psl\sample\MyFirstSample.class doesn't exist.
+    [javac] Compiling 1 source file to E:\JenkinsAssignment\JenkinsSampleProject\build
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+'-d'
+'E:\JenkinsAssignment\JenkinsSampleProject\build'
+'-classpath'
+'E:\JenkinsAssignment\JenkinsSampleProject\build;E:\JenkinsAssignment\JenkinsSampleProject;E:\JenkinsAssignment\JenkinsSampleProject\lib\TestNG.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\jxl.jar;E:\JenkinsAssignment\JenkinsSampleProject\lib\selenium-server-standalone-2.39.0.jar'
+'-sourcepath'
+'E:\JenkinsAssignment\JenkinsSampleProject\src'
+'-g:none'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [javac] File to be compiled:
+    E:\JenkinsAssignment\JenkinsSampleProject\src\com\psl\sample\MyFirstSample.java
+compile:  duration 0 seconds
+
+build-jar:
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: E:\JenkinsAssignment\JenkinsSampleProject\build.xml:41: 
+build-jar:  duration 0 seconds
+
+BUILD FAILED
+
+E:\JenkinsAssignment\JenkinsSampleProject\build.xml:41: E:\JenkinsAssignment\JenkinsSampleProject\build\classes does not exist.
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:483)
+	at org.apache.tools.ant.taskdefs.Zip.grabResources(Zip.java:1550)
+	at org.apache.tools.ant.taskdefs.Zip.getResourcesToAdd(Zip.java:1289)
+	at org.apache.tools.ant.taskdefs.Zip.getResourcesToAdd(Zip.java:1223)
+	at org.apache.tools.ant.taskdefs.Jar.getResourcesToAdd(Jar.java:868)
+	at org.apache.tools.ant.taskdefs.Zip.executeMain(Zip.java:616)
+	at org.apache.tools.ant.taskdefs.Zip.execute(Zip.java:568)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
